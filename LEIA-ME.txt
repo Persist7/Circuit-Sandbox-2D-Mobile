@@ -1,0 +1,18 @@
+CIRCUIT SANDBOX 2D — PWA
+
+Arquivos:
+- index.html: jogo (versão mobile com joystick)
+- manifest.webmanifest: identidade e modo standalone
+- sw.js: cache básico do app
+- icons/: ícones Android
+
+COMO INSTALAR NO ANDROID:
+1. Hospede o conteúdo desta pasta em um endereço HTTPS (GitHub Pages, Netlify ou outro host estático).
+2. Abra o endereço publicado no Chrome.
+3. Abra o menu ⋮ e escolha "Instalar app" ou "Adicionar à tela inicial".
+4. Abra pelo novo ícone. O modo standalone deve ocultar a barra de endereço.
+
+IMPORTANTE:
+- Não abra o index.html diretamente pelo gerenciador de arquivos: file:// e content:// não permitem instalar este PWA corretamente.
+- O jogo usa PeerJS por CDN para multiplayer; essa parte precisa de internet.
+- O cache permite carregar a estrutura do app depois da primeira visita, mas não garante multiplayer offline.
